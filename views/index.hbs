@@ -1,0 +1,197 @@
+<div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard </h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-money fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">1</div>
+                                    <div>Masukkan Data Gaji</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" >
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-money fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">2</div>
+                                    <div>Transaksi Pengeluaran</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-book fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">3</div>
+                                    <div>Laporan Keuangan</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-book fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">4</div>
+                                    <div>Jurnal</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <!-- 
+            <!-- modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                <!-- konten modal-->
+                <div class="modal-content">
+                    <!-- heading modal -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Tambahkan Data Gaji </h4>
+                    </div>
+                    <!-- body modal -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Tambah Data Gaji : 
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <form action="" method="POST" role="form">
+                                                    <div class="form-group">
+                                                        <label>Nama </label>
+                                                        <select class="form-control">
+                                                            <option>Risky</option>
+                                                            <option>Shania</option>
+                                                            <option>Bla</option>
+                                                            <option>Bla</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Gaji Pokok : </label>
+                                                        <input class="form-control" name="gaji_pokok">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>BPJS : </label>
+                                                        <input type="text" class="form-control" name="bpjs">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Uang Lapangan : </label>
+                                                        <input class="form-control" name="uang_lapangan" type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Uang Dinas : </label>
+                                                        <input type="text" name="uang_dinas" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Tunjangan Pajak : </label>
+                                                        <input type="text" name="tunjangan_pajak" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Tanggal : </label>
+                                                        <input type="text" name="tgl" class="form-control" value={{time}} />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label> Potongan Simpanan Wajib : </label>
+                                                        <input type="text" name="simpanan_wajib" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Potongan Iuran : </label>
+                                                        <input type="text" name="iuran" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Potongan Koperasi : </label>
+                                                        <input type="text" name="potongan_koperasi" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Potongan Terlambat : </label>
+                                                        <input type="text" name="potongan_terlambar" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Potongan Pajak : </label>
+                                                        <input type="text" name="pajak" class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Potongan BPJS : </label>
+                                                        <input type="text" name="bpjs" class="form-control" />
+                                                    </div>
+                                                </form>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer modal -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+        </div>

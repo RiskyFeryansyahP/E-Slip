@@ -1,0 +1,228 @@
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Slip Gaji</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+        <div class="row">
+        	<select class="form-control" id="tgl">
+        		<option value="" disabled selected="">Pilih Tanggal Slip</option>
+        		<option value="1"> Tanggal 1 </option>
+        	</select>
+        </div>
+        <hr>
+        {{# each data}}
+        <div class="row">
+        	<div class="well col-xs-10 col-sm-10 col-md-12">
+	            <div class="row">
+	                <div class="col-xs-6 col-sm-6 col-md-6">
+	                    <address>
+	                        <strong>PT Saenak e dewe</strong>
+	                        <br>
+	                        Jln. Kolonel Sugiono no 234
+	                        <br>
+	                        Malang, CA 90026
+	                        <br>
+	                        <abbr title="Phone">P:</abbr> (0341) 484-6829
+	                    </address>
+	                </div>
+	                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+	                	<p>
+	                        <em>Nama: {{this.nama}} </em>
+	                    </p>
+	                    <p>
+	                        <em>Date: {{this.tanggal}} </em>
+	                    </p>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="text-center">
+	                    <h1>Penerimaan</h1>
+	                </div>
+	                </span>
+	                <table class="table table-hover">
+	                    <thead>
+	                        <tr>
+	                            <th>#</th>
+	                            <th>Kepanjangan</th>
+	                            <th class="text-center">Equal</th>
+	                            <th class="text-center">Jumlah</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> GPU </td>
+	                            <td class="col-md-7"><em>Gaji Pokok Umum</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.gaji_pokok}}</td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> UL </td>
+	                            <td class="col-md-7"><em>Uang Lapangan</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.uang_lapangan}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> BPJS </td>
+	                            <td class="col-md-7"><em>BPJS</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.bpjs}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> UD </td>
+	                            <td class="col-md-7"><em>Uang Dinas</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.uang_dinas}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> TP </td>
+	                            <td class="col-md-7"><em>Tunjangan Pajak</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.tunjangan_pajak}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td>   </td>
+	                            <td>   </td>
+	                            <td class="text-right">
+	                            <p>
+	                                <strong>Total Penerimaan: </strong>
+	                            </p>
+	                            <td class="text-center">
+	                            <p>
+	                                <strong>RP. {{this.total_pendapatan}} </strong>
+	                            </p>
+	                        </tr>
+	                        <tr>
+	                            <td>   </td>
+	                            <td>   </td>
+	                            <td class="text-right"><h4><strong>Total Penerimaan: </strong></h4></td>
+	                            <td class="text-center text-danger"><h4><strong>Rp. {{this.total_pendapatan}} </strong></h4></td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	                <!-- <button type="button" class="btn btn-success btn-lg btn-block">
+	                    Pay Now   <span class="glyphicon glyphicon-chevron-right"></span>
+	                </button></td> -->
+	            </div>
+	            <div class="row">
+	                <div class="text-center">
+	                    <h1>Potongan</h1>
+	                </div>
+	                </span>
+	                <table class="table table-hover">
+	                    <thead>
+	                        <tr>
+	                            <th>#</th>
+	                            <th>Kepanjangan</th>
+	                            <th class="text-center">Equal</th>
+	                            <th class="text-center">Jumlah</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> SW </td>
+	                            <td class="col-md-7"><em>Simpanan Wajib</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.simpanan_wajib}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> Iuran </td>
+	                            <td class="col-md-7"><em>Iuran</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.iuran}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> PK </td>
+	                            <td class="col-md-7"><em>Potongan Koperasi</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.potongan_koperasi}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> PT </td>
+	                            <td class="col-md-7"><em>Potongan Terlambat</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.potongan_terlambat}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> PBPJS </td>
+	                            <td class="col-md-7"><em>Potongan BPJS</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.potongan_bpjs}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td class="col-md-1" style="text-align: center"> Pajak </td>
+	                            <td class="col-md-7"><em>Potongan Pajak</em></h4></td>
+	                            <td class="col-md-1 text-center">=</td>
+	                            <td class="col-md-3 text-center">Rp. {{this.pajak}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td>   </td>
+	                            <td>   </td>
+	                            <td class="text-right">
+	                            <p>
+	                                <strong>Subtotal: </strong>
+	                            </p>
+	                            <td class="text-center">
+	                            <p>
+	                                <strong>Rp. {{this.total_potongan}} </strong>
+	                            </p>
+	                        </tr>
+	                        <tr>
+	                            <td>   </td>
+	                            <td>   </td>
+	                            <td class="text-right"><h4><strong>Total Potongan: </strong></h4></td>
+	                            <td class="text-center text-danger"><h4><strong>Rp. {{this.total_potongan}} </strong></h4></td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	            <div class="row">
+	                <div class="text-center">
+	                    <h1>Total Gaji</h1>
+	                </div>
+	                </span>
+	                <table class="table table-hover">
+	                    <thead>
+	                        <tr>
+	                            <th>Total Penerimaan</th>
+	                            <th class="text-center">Total Potongan</th>
+	                            <th>#</th>
+	                            <th class="text-center">Total Semua</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td class="col-md-3">Rp. {{this.total_pendapatan}} </td>
+	                            <td class="col-md-3 text-center"> Rp. {{this.total_potongan}} </td>
+	                            <td class="col-md-3" style="text-align: center"> = </td>
+	                            <td class="col-md-3 text-center">Rp. {{this.total_semua}} </td>
+	                        </tr>
+	                        <tr>
+	                            <td>   </td>
+	                            <td>   </td>
+	                            <td class="text-right">
+	                            <p>
+	                                <strong>Total Semua: </strong>
+	                            </p>
+	                            <td class="text-center">
+	                            <p>
+	                                <strong>Rp. {{this.total_semua}} </strong>
+	                            </p>
+	                        </tr>
+	                        <tr>
+	                            <td>   </td>
+	                            <td>   </td>
+	                            <td class="text-right"><h4><strong>Total : </strong></h4></td>
+	                            <td class="text-center text-danger"><h4><strong>Rp. {{this.total_semua}} </strong></h4></td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	                <button type="button" class="btn btn-success btn-lg btn-block">
+	                    Print PDF Slip Gaji   <span class="glyphicon glyphicon-chevron-right"></span>
+	                </button></td>
+	            </div>
+	        </div>
+        </div>
+        {{/each}}	
+    </div>
+</div>
